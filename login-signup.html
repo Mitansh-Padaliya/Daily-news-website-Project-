@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News - Login & Sign Up</title>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login-signup.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-globe"></i> DAILY NEWS <i class="fas fa-globe"></i></h1>
+        <nav>
+            <ul>
+                <li><a href="login-signup.html"><i class="fas fa-sign-in-alt"></i> Login / Sign Up</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="india.html"><i class="fas fa-flag"></i> India</a></li>
+                <li><a href="world.html"><i class="fas fa-globe-americas"></i> World</a></li>
+                <li><a href="business.html"><i class="fas fa-briefcase"></i> Business</a></li>
+                <li><a href="sports.html"><i class="fas fa-futbol"></i> Sports</a></li>
+                <li><a href="entertainment.html"><i class="fas fa-film"></i> Entertainment</a></li>
+                <li><a href="tech.html"><i class="fas fa-laptop-code"></i> Tech</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="auth">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email" required>
+                <br><br>
+                <label for="loginPassword"><i class="fas fa-lock"></i> Password:</label>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+                <br><br>
+                <button type="submit">Login</button>
+            </form>
+            <br><br>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupEmail"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="signupEmail" name="signupEmail" placeholder="Enter your email" required>
+                <br><br>
+                <label for="signupPassword"><i class="fas fa-lock"></i> Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" placeholder="Create a password" required>
+                <br><br>
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <div id="responseMessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p><i class="fas fa-envelope"></i> Email : dailynews@gmail.com</p>
+    </footer>    
+    <footer>
+        <p>© 2024 Daily News. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>

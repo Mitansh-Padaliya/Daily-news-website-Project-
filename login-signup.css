@@ -1,0 +1,87 @@
+/* login-signup.css: Styles specifically for the Login and Sign-Up page */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.auth h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+.auth input[type="email"],
+.auth input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.auth input[type="email"]:focus,
+.auth input[type="password"]:focus {
+    outline: none;
+    border-color: #007BFF;
+    background-color: #fff;
+}
+
+.auth button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b0101;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth button:hover {
+    background-color: #0056b3;
+}
+
+#responseMessage {
+    margin-top: 20px;
+    color: red;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .auth {
+        padding: 20px;
+        max-width: 90%;
+    }
+}
